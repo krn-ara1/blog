@@ -1,8 +1,10 @@
 <script setup>
+import HeaderHeader from '@/components/header/Header.vue';
 </script>
 
 <template>
   <div class="container">
+    <HeaderHeader />
     <div class="wrapper">
       <div class="mainAndPageTop">
         <main class="main">
