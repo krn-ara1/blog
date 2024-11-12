@@ -1,5 +1,6 @@
 <script setup>
 import HeaderHeader from '@/components/header/Header.vue';
+import FooterFooter from '@/components/footer/Footer.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import HeaderHeader from '@/components/header/Header.vue';
           <slot />
         </main>
       </div>
+      <FooterFooter />
     </div>
   </div>
 </template>
