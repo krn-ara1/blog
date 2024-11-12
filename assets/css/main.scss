@@ -6,6 +6,7 @@
   --main: #669ed1;
   --sub: #edb560;
 
+  --xs: calc((1rem * 1.6) * 0.5);
   --s: calc((1rem * 1.6) * 1);
   --m: calc((1rem * 1.6) * 2);
   --l: calc((1rem * 1.6) * 4);
@@ -54,5 +55,5 @@ ol {
   width: 100%; 
   overflow-x: hidden;
   font-size: 1rem;
-  height: 9999px;
+  // height: 9999px;
 }
