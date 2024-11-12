@@ -61,6 +61,7 @@
 .footerLogoImage {
   width: 100%;
   height: auto;
+  min-width: calc(1rem * 6);
 }
 .footerNavAndSearch {
   display: flex;
