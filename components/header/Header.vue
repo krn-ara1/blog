@@ -66,5 +66,6 @@
 .headerLogoImage {
   width: 100%;
   height: auto;
+  min-width: calc(1rem * 13);
 }
 </style>
