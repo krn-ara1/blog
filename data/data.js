@@ -157,3 +157,17 @@ export const snss = [
     color: "#455964",
   },
 ];
+
+
+export const pickupTrips = [
+  {
+    title: "奥日光",
+    date: "2024-06-22",
+    thumb: "/image_24.jpg",
+  },
+  {
+    title: "笠間",
+    date: "2023-05-12",
+    thumb: "/image_01.jpg",
+  },
+];
