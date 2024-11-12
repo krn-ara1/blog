@@ -11,7 +11,7 @@ import { snss } from "~/data/data";
 <style scoped>
 .snssContainer {
   display: flex;
-  gap: 0 calc(0.8rem * 0.8);
+  gap: calc(0.8rem * 0.8);
   flex-wrap: wrap;
 }
 </style>
