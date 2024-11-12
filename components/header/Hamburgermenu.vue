@@ -42,7 +42,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--text);
+  background-color: var(--color-text);
   border-radius: 99999px;
 }
 .hamburgermenuButtonContainer,
@@ -136,7 +136,7 @@ onMounted(() => {
   transform-origin: top;
   transform: translateY(calc(100% + 0.8rem * 1)) translateX(50%) rotateX(90deg);
   width: 80%;
-  /* border: 1px solid var(--text); */
+  /* border: 1px solid var(--color-text); */
   border-radius: calc(0.8rem * 1);
   transition: transform 0.4s;
   /* padding: calc(0.8rem * 1); */

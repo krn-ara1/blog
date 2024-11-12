@@ -25,15 +25,15 @@
 }
 .statusMessageIcon {
   background-color: #ffffff;
-  border: 1px solid var(--text);
+  border: 1px solid var(--color-text);
   width: calc(0.8rem * 1.6 + 0.8rem * 1.6 * 0.2 * 2);
   height: calc(0.8rem * 1.6 + 0.8rem * 1.6 * 0.2 * 2);
   border-radius: 50%;
   filter: contrast(0.8);
 }
 .statusMessageTextContainer {
-  background-color: var(--sub);
-  border: 1px solid var(--text);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-text);
   width: calc(0.8rem * 20);
   padding: calc(0.8rem * 0.2) calc(0.8rem * 1);
   border-radius: 99999px;

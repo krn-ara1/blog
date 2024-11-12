@@ -35,7 +35,7 @@ const snsIconStyle = {
 
 <style scoped>
 .snsContainer {
-  color: var(--bg);
+  color: var(--color-bg);
   font-weight: lighter;
   display: flex;
   align-items: center;

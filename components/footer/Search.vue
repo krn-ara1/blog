@@ -11,7 +11,7 @@
   display: flex;
 }
 .searchInput {
-  border: 1px solid var(--text);
+  border: 1px solid var(--color-text);
   border-right: none;
   width: calc(0.8rem * 10);
   padding: calc(0.8rem * 0.2) calc(0.8rem * 1);
@@ -26,7 +26,7 @@
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  border: 1px solid var(--text);
+  border: 1px solid var(--color-text);
   padding: calc(0.8rem * 0.2) calc(0.8rem * 1);
   border-radius: 0 99999px 99999px 0;
   position: relative;

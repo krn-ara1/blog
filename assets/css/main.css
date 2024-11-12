@@ -1,10 +1,10 @@
 :root {
-  --text: #000000;
-  --textSoft: #1e1e1e;
-  --bg: #ffffff;
-  --bgSoft: #eeeeee;
-  --main: #669ed1;
-  --sub: #edb560;
+  --color-text: #000000;
+  --color-textSoft: #1e1e1e;
+  --color-bg: #ffffff;
+  --color-bgSoft: #eeeeee;
+  --color-primary: #669ed1;
+  --color-secondary: #edb560;
   --xs: calc((1rem * 1.6) * 0.5);
   --s: calc((1rem * 1.6) * 1);
   --m: calc((1rem * 1.6) * 2);
@@ -19,8 +19,8 @@
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 a {

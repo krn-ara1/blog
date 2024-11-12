@@ -33,8 +33,8 @@
   top: 100vh;
   width: 100%;
   font-size: 0.8rem;
-  background-color: var(--main);
-  border-top: 1px solid var(--text);
+  background-color: var(--color-primary);
+  border-top: 1px solid var(--color-text);
   margin-top: calc(0.8rem * 1);
 }
 .footerWrapper {

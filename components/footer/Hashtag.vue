@@ -29,7 +29,7 @@ const props = defineProps({
 }
 .hashtagEmoji {
   color: transparent;
-  text-shadow: 0 0 0 var(--text);
+  text-shadow: 0 0 0 var(--color-text);
 }
 .hashtagContainer:hover .hashtagEmoji,
 .hashtagContainer:focus .hashtagEmoji {

@@ -47,11 +47,11 @@ const scrollPageTop = () => {
   justify-content: flex-end;
 }
 .pagetopButton {
-  background-color: var(--bg);
+  background-color: var(--color-bg);
   transform: translateX(100%);
   font-size: 0.8rem;
   text-transform: uppercase;
-  border: 1px solid var(--text);
+  border: 1px solid var(--color-text);
   border-radius: 99999px;
   padding: calc(0.8rem * 0.2) calc(0.8rem * 1);
   cursor: pointer;

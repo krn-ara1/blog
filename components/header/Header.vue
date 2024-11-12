@@ -31,8 +31,8 @@
   left: 0;
   width: 100%;
   font-size: 0.8rem;
-  background-color: var(--main);
-  border-bottom: 1px solid var(--text);
+  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-text);
 }
 .headerWrapper {
   width: 80%;

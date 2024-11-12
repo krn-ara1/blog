@@ -20,7 +20,7 @@ const props = defineProps({
 .navItemContainer {
   background-color: #ffffff;
   padding: calc(0.8rem * 0.2) calc(0.8rem * 1);
-  border: 1px solid var(--text);
+  border: 1px solid var(--color-text);
   border-radius: 99999px;
   display: flex;
   align-items: center;
@@ -30,8 +30,8 @@ const props = defineProps({
 }
 .navItemContainer:hover,
 .navItemContainer:focus {
-  background-color: var(--text);
-  color: var(--bg);
+  background-color: var(--color-text);
+  color: var(--color-bg);
   transition: all 0.1s linear;
 }
 .navItemJa {
