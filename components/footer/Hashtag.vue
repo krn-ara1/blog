@@ -8,13 +8,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <li>
-    <NuxtLink class="hashtagContainer" :to="props.hashtag.path">
-      <span>#</span>
-      <span class="hashtagText">{{ props.hashtag.text }}</span>
-      <span class="hashtagEmoji">{{ props.hashtag.emoji }}</span>
-    </NuxtLink>
-  </li>
+  <NuxtLink class="hashtagContainer" :to="props.hashtag.path">
+    <span>#</span>
+    <span class="hashtagText">{{ props.hashtag.text }}</span>
+    <span class="hashtagEmoji">{{ props.hashtag.emoji }}</span>
+  </NuxtLink>
 </template>
 
 <style scoped>

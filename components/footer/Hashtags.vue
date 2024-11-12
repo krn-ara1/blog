@@ -1,14 +1,12 @@
 <script setup>
-import { hashtags } from '~/data/data';
+import { hashtags } from "~/data/data";
 </script>
 
 <template>
   <ul class="hashtagsContainer">
-    <FooterHashtag
-      v-for="(hashtag, index) in hashtags"
-      :key="index"
-      :hashtag="hashtag"
-    />
+    <li v-for="(hashtag, index) in hashtags" :key="index">
+      <FooterHashtag :hashtag="hashtag" />
+    </li>
   </ul>
 </template>
 
