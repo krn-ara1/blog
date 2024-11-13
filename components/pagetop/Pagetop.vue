@@ -105,7 +105,7 @@ const scrollPageTop = () => {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1280px) {
+@media not screen and (min-width: 1280px) {
   .pagetopButton {
     transform: translateX(0);
   }
