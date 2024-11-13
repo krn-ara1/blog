@@ -76,16 +76,23 @@ import { pickupTrips } from "~/data/data";
 }
 .windowcardsItem {
   width: calc(calc(100% - calc(var(--xs) * 2)) / 3);
+  transition: transform 0.1s linear;
 }
-@media screen and (max-width: 810px) {
+@media not screen and (min-width: 1024px) {
   .windowcardsItem {
     width: calc(calc(100% - calc(var(--xs) * 1)) / 2);
   }
 }
-@media screen and (max-width: 430px) {
+@media not screen and (min-width: 768px) {
   .windowcardsItem {
     width: calc(calc(100% - calc(var(--xs) * 0)) / 1);
   }
+}
+.windowcardsItem:nth-of-type(odd):hover {
+  transform: rotate(2.5deg);
+}
+.windowcardsItem:nth-of-type(even):hover {
+  transform: rotate(-2.5deg);
 }
 .homeSectionFoot {
   display: flex;
