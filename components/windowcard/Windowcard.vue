@@ -13,18 +13,19 @@ const dateDot = dateHyphen.replaceAll("-", ".");
 const today = new Date();
 const millisecondsPerDay = 86400000;
 const term = (today - date) / millisecondsPerDay;
-const daysRecent = 14
+const daysRecent = 14;
 const isNew = term <= daysRecent;
 </script>
 
 <template>
-  <article class="windowcardContainer">
+  <NuxtLink class="windowcardContainer" href="#">
     <div class="windowcardHead">
       <div class="windowcardDateAndTitle">
         <time class="windowcardDate" :datetime="dateHyphen">{{ dateDot }}</time>
         <h3 class="windowcardTitle">{{ props.article.title }}</h3>
       </div>
-      <img v-show="isNew"
+      <img
+        v-show="isNew"
         class="windowcardNewflagIcon"
         src="/icon_newflag.png"
         width="137"
@@ -33,24 +34,14 @@ const isNew = term <= daysRecent;
       />
     </div>
     <div class="windowcardBody">
+      <span class="windowcardText">この記事を読む</span>
       <img class="windowcardImage" :src="props.article.thumb" />
     </div>
     <div class="windowcardFoot">
-      <NuxtLink class="windowcardLink" href="#"
-        >この記事の続きを読む<img
-          class="windowcardLinkIcon"
-          src="/icon_arrow_02.png"
-          width="48"
-          height="49"
-      /></NuxtLink>
-      <button class="windowcardButton favorite">
-        <img src="/icon_favorite.png" />
-      </button>
-      <button class="windowcardButton share">
-        <img src="/icon_share.png" />
-      </button>
+      <img class="windowcardAction favorite" src="/icon_favorite.png" />
+      <img class="windowcardAction share" src="/icon_share.png" />
     </div>
-  </article>
+  </NuxtLink>
 </template>
 
 <style scoped>
@@ -58,7 +49,7 @@ const isNew = term <= daysRecent;
   border-radius: calc(0.8rem * 1);
   padding: var(--xs);
   border: 1px solid var(--color-text);
-  background-color: #fefcf0;;
+  background-color: #fefcf0;
   box-shadow: 4px 4px 4px -4px #808080;
   display: flex;
   flex-direction: column;
@@ -86,76 +77,53 @@ const isNew = term <= daysRecent;
   height: auto;
 }
 .windowcardBody {
+  position: relative;
+}
+.windowcardText {
+  z-index: 20;
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity 0.2s linear;
+}
+.windowcardContainer:hover .windowcardText,
+.windowcardContainer:focus .windowcardText {
+  opacity: 1;
 }
 .windowcardImage {
+  z-index: 10;
   border: 1px solid var(--color-text);
   display: block;
   width: 100%;
   height: auto;
+  transition: filter 0.2s linear;
+}
+.windowcardContainer:hover .windowcardImage,
+.windowcardContainer:focus .windowcardImage {
+  filter: brightness(0.8);
 }
 .windowcardFoot {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.windowcardLink {
-  font-size: 0.5rem;
-  margin-right: auto;
-  display: flex;
-  gap: calc(0.5rem * 0.5);
-}
-.windowcardLink:hover{
-  animation: zoom .3s;
-}
-@keyframes zoom {
-	50% {
-		transform: scale(1.05);
-	}
-}
-/* .windowcardLink {
-  font-size: 0.5rem;
-  margin-right: auto;
-  display: flex;
-  gap: calc(0.5rem * 0.5);
-  position: relative;
-  z-index: 1;
-}
-.windowcardLink::before {
-  background: linear-gradient(transparent 10%, #ff8260cc 50%);
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  transform: scale(0, 1);
-  transform-origin: right top;
-  transition: transform 0.3s;
-  z-index: -1;
-}
-.windowcardLink:hover::before {
-  transform-origin: left top;
-  transform: scale(1, 1);
-} */
 .windowcardLinkIcon {
   width: 0.5rem;
   height: auto;
 }
-.windowcardButton {
-  background: inherit;
-  border: none;
-}
-.windowcardButton + .windowcardButton {
-  margin-left: calc(0.8rem * 0.25);
-}
-.windowcardButton img {
+.windowcardAction {
   width: 0.8rem;
   height: auto;
 }
-.windowcardButton.favorite {
+.windowcardAction + .windowcardAction {
+  margin-left: calc(0.8rem * 0.25);
 }
-.windowcardButton.share {
+.windowcardAction.favorite {
+}
+.windowcardAction.share {
 }
 </style>
