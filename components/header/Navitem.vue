@@ -41,7 +41,7 @@ const props = defineProps({
   text-transform: uppercase;
   font-weight: lighter;
 }
-@media screen and (max-width: 1080px) {
+@media not screen and (min-width: 1080px) {
   .navItemEn {
     display: none;
   }

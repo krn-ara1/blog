@@ -55,7 +55,7 @@
   border: solid 1px #ffffff;
   top: 0;
 }
-@media screen and (max-width: 810px) {
+@media not screen and (min-width: 810px) {
   .searchContainer {
     display: none;
   }

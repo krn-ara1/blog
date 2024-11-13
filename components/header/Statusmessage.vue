@@ -56,7 +56,7 @@
     transform: translateX(-100%);
   }
 }
-@media screen and (max-width: 768px) {
+@media not screen and (min-width: 768px) {
   .statusMessageTextContainer {
     width: calc(0.8rem * 10);
   }

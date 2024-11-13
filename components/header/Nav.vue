@@ -23,7 +23,7 @@ import { pages } from "~/data/data";
   align-items: center;
   gap: 0.8rem;
 }
-@media screen and (max-width: 810px) {
+@media not screen and (min-width: 810px) {
   .navContainer {
     display: none;
   }
