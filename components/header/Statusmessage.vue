@@ -40,7 +40,6 @@
   overflow: hidden;
 }
 .statusMessageTextWrapper {
-  overflow: hidden;
 }
 .statusMessageText {
   display: inline-block;
