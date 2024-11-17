@@ -34,6 +34,7 @@ const scrollPageTop = () => {
 
 <style scoped>
 .pagetopContainer {
+  z-index: 99998;
   width: 100%;
   position: sticky;
   bottom: 0;
