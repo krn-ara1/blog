@@ -9,6 +9,7 @@
             src="/logo_column.png"
             width="236"
             height="128"
+            loading="lazy"
           />
         </NuxtLink>
         <div class="footerNavAndSearch">
