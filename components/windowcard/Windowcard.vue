@@ -30,16 +30,25 @@ const isNew = term <= daysRecent;
         src="/icon_newflag.png"
         width="137"
         height="64"
+        loading="lazy"
         alt="new"
       />
     </div>
     <div class="windowcardBody">
       <span class="windowcardText">この記事を読む</span>
-      <img class="windowcardImage" :src="props.article.thumb" />
+      <img class="windowcardImage" :src="props.article.thumb" loading="lazy" />
     </div>
     <div class="windowcardFoot">
-      <img class="windowcardAction favorite" src="/icon_favorite.png" />
-      <img class="windowcardAction share" src="/icon_share.png" />
+      <img
+        class="windowcardAction favorite"
+        src="/icon_favorite.png"
+        loading="lazy"
+      />
+      <img
+        class="windowcardAction share"
+        src="/icon_share.png"
+        loading="lazy"
+      />
     </div>
   </NuxtLink>
 </template>
