@@ -26,6 +26,7 @@ const snsIconStyle = {
           :src="props.sns.iconPath"
           width="35"
           height="35"
+          loading="lazy"
         />
       </span>
       <span class="snsText">{{ props.sns.id }}</span>
