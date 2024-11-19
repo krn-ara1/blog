@@ -171,3 +171,16 @@ export const pickupTrips = [
     thumb: "/image_01.jpg",
   },
 ];
+
+export const pickupHangouts = [
+  {
+    title: "上野",
+    date: "2024-10-27",
+    thumb: "/image_27.jpg",
+  },
+  {
+    title: "東京",
+    date: "2024-11-04",
+    thumb: "/image_28.jpg",
+  },
+];
