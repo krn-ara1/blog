@@ -1,5 +1,5 @@
 <template>
-  <div class="searchContainer">
+  <div class="searchContainer -inProgress">
     <input class="searchInput" type="text" placeholder="サイト内検索" />
     <button class="searchButton" type="submit"></button>
   </div>
