@@ -6,7 +6,7 @@ const onClick = () => {
 onMounted(() => {
   window.addEventListener("resize", () => {
     const innerWidth = window.innerWidth;
-    if (innerWidth >= 811) {
+    if (innerWidth >= 810) {
       isOpened.value = false;
     }
   });
@@ -166,7 +166,7 @@ onMounted(() => {
   transform: translateY(calc(100% + 0.8rem * 1)) translateX(50%) rotateX(0);
   transition: transform 0.4s;
 }
-@media screen and (min-width: 811px) {
+@media screen and (min-width: 810px) {
   .hamburgermenuButtonContainer {
     display: none;
   }
